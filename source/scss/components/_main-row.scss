@@ -1,0 +1,128 @@
+.main-row{
+    display: flex;
+    flex-direction: row;
+    grid-gap: clamp(15px, 1.6722vw, 20px);
+    justify-content: flex-end;
+    align-items: center;
+    min-height: clamp(300px, 45.9866vw, 550px);
+    padding: 0 0 clamp(15px, 2.2575vw, 27px);
+    position: relative;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(10px, 1.6722vw, 20px);
+        max-width: 48.5%;
+        width: 100%;
+
+        @include small-tablet{
+            max-width: 100%;
+        }
+    }
+
+    &__image{
+        z-index: -1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-88%);
+        height: 100%;
+        max-width: clamp(440px, 68.548vw, 850px);
+        width: 100%;
+
+        img,picture{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @include laptop{
+            height: 85%;
+            transform: translateX(-82%);
+        }
+
+        @include small-tablet{
+            position: relative;
+            transform: none;
+            left: 3%;
+            height: 100%;
+            max-width: clamp(320px, 85.286vw, 655px);
+        }
+
+        @include mobile{
+            max-width: 100%;
+        }
+    }
+
+    @include small-tablet{
+        flex-direction: column;
+        padding: 0;
+        grid-gap: 0;
+    }
+
+    &--first{
+        .main-row__box{
+            max-width: 51%;
+
+            @include laptop{
+                max-width: 53%;
+            }
+            @include small-tablet{
+                max-width: 100%;
+            }
+        }
+    }
+
+    &--camera{
+        .main-row__box{
+            max-width: 50%;
+
+            @include laptop{
+                max-width: 51%;
+            }
+            @include small-tablet{
+                max-width: 100%;
+            }
+        }
+    }
+
+    &--mode{
+        .main-row{
+            
+            &__image{
+                @include small-tablet{
+                margin-top: -30px;
+                }
+
+                @include mobile{
+                    margin-top: -20px;
+                }
+            } 
+            &__box{
+                @include small-tablet{
+                margin-top: -35px;
+                }
+                @include mobile{
+                    margin-top: -25px;
+                }
+            }
+        }
+    }
+
+    &--top{
+        .main-row__image{
+            @include small-tablet{
+                margin-top: -20px;
+            }
+            @include mobile{
+                margin-top: -10px;
+            }
+        }
+    }
+    &--second{
+        .main-row__image{
+            @include small-tablet{
+                margin-top: -10px;
+            }
+        }
+    }
+}

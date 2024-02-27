@@ -1,0 +1,26 @@
+.choice-section{
+    overflow: hidden;
+    background-color: rgba(var(--bg-a),1.0);
+    padding: clamp(21px, 8.5196vw, 122px) 0 clamp(46px, 5.3073vw, 76px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(19px, 6.9832vw, 100px);
+
+
+        .title{
+            @include small-tablet{
+            align-self: flex-start;
+        }
+    }
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(8px, 2.2346vw, 32px);
+    }
+}

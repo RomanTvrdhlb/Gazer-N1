@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="uk">
+@include('partials/head.html')
+
+<body>
+  <!-- @include('partials/header.html') -->
+
+  <main>
+    <section class="first-section">
+      <div class="first-section__bg">
+        <picture>
+          <source type='image/webp' srcset='img/index/bg1.webp'>
+          <img width='1728' height='984' src='img/index/bg1.png' alt='image'>
+        </picture>
+      </div>
+      <div class="container">
+        <div class="first-section__box">
+          <h1 class="main-title">Что объединяет<br>
+            всех владельцев<br>
+            смарт телевизоров?</h1>
+          <span class="main-title main-title--middle">30 минут ищут фильм,<br>
+            а затем идут спать</span>
+          <span class="main-title main-title--big">Знакомо?</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="about-section__box">
+          <div class="about-section__wrapp">
+            <h2 class="title"><span class="title title--big">Gazer N1 live edition</span>Всегда есть что посмотреть</h2>
+            <div class="about-section__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img1.webp'>
+                <img width='1119' height='753' src='img/index/img1.png' alt='image'>
+              </picture>
+            </div>
+
+            <button class="main-button">Выбрать модель</button>
+
+          </div>
+
+          <div class="about-section__inner">
+            <span class="title">Что посмотреть сегодня вечером?</span>
+            <div class="about-section__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img2.webp'>
+                <img width='467' height='466' src='img/index/img2.png' alt='image'>
+              </picture>
+            </div>
+            <ul class="about-list">
+              <li class="about-list__item">
+                <span class="about-list__title">Если вы знаете название фильма</span>
+                <p>сколько приложений нужно установить и открыть, чтобы его найти?</p>
+              </li>
+              <li class="about-list__item">
+                <span class="about-list__title">А если не знаете,
+                  что посмотреть?</span>
+                <p>в каком из приложений можно найти хороший фильм, а главное - как?
+                </p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div class="search-section__bg">
+        <picture>
+          <source type='image/webp' srcset='img/index/bg2.webp'>
+          <img width='1733' height='1011' src='img/index/bg2.png' alt='image'>
+        </picture>
+      </div>
+
+      <div class="container">
+        <div class="search-section__box">
+          <h3 class="title">Как обычно происходит поиск?</h3>
+          <ul class="search-list">
+            <li class="search-list__item">
+              <span class="search-list__title">Ищем название фильма на смартфоне</span>
+              <p>подборки, лидеры мнений, соцсети</p>
+            </li>
+            <li class="search-list__item">
+              <span class="search-list__title">открываем
+                каждое приложение</span>
+              <p>установленное на ТВ</p>
+            </li>
+            <li class="search-list__item">
+              <span class="search-list__title">вводим название
+                и проверяем</span>
+              <p>есть ли фильм, входит ли
+                в подписку, нужно ли покупать</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <div class="info-section__box">
+          <div class="info-section__inner">
+          <h4 class="title">Чем обычно заканчивается поиск?</h4>
+
+          <ul class="info-list">
+            <li class="info-list__item">
+              <div class="info-list__box">
+              <div class="info-list__top">
+                <span class="info-list__text">Фильм не найден</span>
+                <div class="info-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/img3.webp'>
+                    <img width='456' height='262' src='img/index/img3.png' alt='image'>
+                  </picture>
+                </div>
+              </div>
+              <span class="info-list__title">В установленных приложениях - нашего фильма нет</span>
+              <p>Но ведь фильм существует -
+                у кого же он есть?
+                </p>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="info-list__box">
+              <div class="info-list__top">
+                <span class="info-list__text">Английский язык</span>
+                <div class="info-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/img4.webp'>
+                    <img width='456' height='262' src='img/index/img4.png' alt='image'>
+                  </picture>
+                </div>
+              </div>
+              <span class="info-list__title">Фильм есть, но без перевода на нужный язык</span>
+              <p>Даже если вы знаете разговорный, эмоции от просмотра будут совсем другие</p>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="info-list__box">
+              <div class="info-list__top">
+                <span class="info-list__text">Фильм стоит $10</span>
+                <div class="info-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/img5.webp'>
+                    <img width='456' height='262' src='img/index/img5.png' alt='image'>
+                  </picture>
+                </div>
+              </div>
+              <span class="info-list__title">Фильм есть на нужном языке, но он не входит
+                в подписку</span>
+              <p>Так а может в другом приложении входит? Не покупать же теперь каждый фильм</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="info-section__wrapp">
+          <span class="title">Как бы вы хотели,<br>
+            чтобы работал телевизор?</span>
+            <div class="info-section__content">
+              <ul class="how-list">
+                <li class="how-list__item">
+                  <p>как <b>Kiwi</b><br>
+                    для поиска авиабилетов</p>
+                </li>
+                <li class="how-list__item">
+                  <p>как <b>Booking</b><br>
+                    для поиска отелей</p>
+                </li>
+                <li class="how-list__item">
+                  <p>как <b>Amazon</b><br>
+                    для поиска товаров</p>
+                </li>
+              </ul>
+              <div class="info-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/index/img6.webp'>
+                  <img width='817' height='325' src='img/index/img6.png' alt='image'>
+                </picture>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choice-section">
+      <div class="container">
+        <div class="choice-section__box">
+          <h5 class="title title--black">Gazer для поиска фильмов</h5>
+          <div class="choice-section__inner">
+          <div class="choice-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/index/img7.webp'>
+              <img width='1119' height='755' src='img/index/img7.png' alt='image'>
+            </picture>
+          </div>
+          <button class="main-button">Выбрать модель</button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs-section">
+      <div class="specs-section__bg">
+        <picture>
+          <source type='image/webp' srcset='img/index/bg3.webp'>
+          <img width='1732' height='1115' src='img/index/bg3.png' alt='image'>
+        </picture>
+      </div>
+      <div class="container">
+        <div class="specs-section__box">
+          <h6 class="title">Экран multiverse screen</h6>
+
+          <div class="specs-section__inner">
+            <div class="specs-section__wrapp">
+              <span class="subtitle subtitle--mode">Cоздан на базе IPS панели класса А+</span>
+              <ul class="specs-list">
+                <li class="specs-list__item">
+                  <span class="specs-list__icon">
+                    <svg width='77' height='77'>
+                      <use href='img/sprite/sprite.svg#icon1'></use>
+                    </svg>
+                  </span>
+                  <p>Более высокая яркость и контрастность по сравнению с обычными ТВ панелями</p>
+                </li>
+                <li class="specs-list__item">
+                  <span class="specs-list__icon">
+                    <svg width='77' height='77'>
+                      <use href='img/sprite/sprite.svg#icon2'></use>
+                    </svg>
+                  </span>
+                  <p>Не меняется при<br> просмотре с любого угла
+                  </p>
+                </li>
+                <li class="specs-list__item">
+                  <span class="specs-list__icon">
+                    <svg width='77' height='77'>
+                      <use href='img/sprite/sprite.svg#icon3'></use>
+                    </svg>
+                  </span>
+                  <p>Сохраняются в течение минимум 10 лет</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="specs-section__content">
+            <div class="specs-section__wrapp">
+              <span class="subtitle subtitle--mode">TrueRGB компоновка субпикселей</span>
+              <ul class="specs-list">
+                <li class="specs-list__item">
+                  <span class="specs-list__icon">
+                    <svg width='77' height='77'>
+                      <use href='img/sprite/sprite.svg#icon4'></use>
+                    </svg>
+                  </span>
+                  <p>Без использования<br> белого субпикселя</p>
+                </li>
+                <li class="specs-list__item">
+                  <span class="specs-list__icon">
+                    <svg width='77' height='77'>
+                      <use href='img/sprite/sprite.svg#icon5'></use>
+                    </svg>
+                  </span>
+                  <p>Гарантирует полное разрешение</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="specs-section__wrapp">
+              <span class="subtitle subtitle--mode">Уникальная калибровка цветопередачи</span>
+              <ul class="specs-list">
+                <li class="specs-list__item">
+                  <span class="specs-list__icon">
+                    <svg width='77' height='77'>
+                      <use href='img/sprite/sprite.svg#icon6'></use>
+                    </svg>
+                  </span>
+                  <p>Как в лучших в мире ноутбуках</p>
+                </li>
+                <li class="specs-list__item">
+                  <span class="specs-list__icon">
+                    <svg width='77' height='77'>
+                      <use href='img/sprite/sprite.svg#icon7'></use>
+                    </svg>
+                  </span>
+                  <p>Точно и натурально передает все цвета</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="specs-section__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img8.webp'>
+                <img width='937' height='685' src='img/index/img8.png' alt='image'>
+              </picture>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- @include('partials/footer.html')
+  @include('partials/modals.html') -->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

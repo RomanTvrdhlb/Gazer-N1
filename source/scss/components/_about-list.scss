@@ -1,0 +1,24 @@
+.about-list{
+    display: flex;
+    grid-gap: clamp(20px, 3.352vw, 48px);
+  
+    &__item{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(4px, 1.0879vw, 12px);
+        max-width: 327px;
+
+        &:first-child{
+            max-width: 350px;
+        }
+    }
+
+    &__title{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: clamp(22px, 2.9918vw, 33px);
+        color: rgba(var(--cl-a), 1);
+    }
+
+  
+}

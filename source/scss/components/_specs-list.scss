@@ -1,0 +1,24 @@
+.specs-list{
+    display: grid;
+    grid-template-columns: repeat(3, 325px);
+    align-items: center;
+    grid-gap: clamp(14px, 3.7709vw, 54px);
+
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(6px, 1.1872vw, 17px);
+        align-items: center;
+    }
+
+    &__icon{
+        display: flex;
+
+        svg{
+            width: clamp(57px, 5.3771vw, 77px);
+            height: auto;
+            fill: transparent;
+        }
+    }
+}
