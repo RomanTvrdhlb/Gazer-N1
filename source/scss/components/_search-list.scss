@@ -1,7 +1,16 @@
 .search-list {
   display: grid;
   grid-template-columns: 1fr .85fr .85fr;
-  grid-gap: 140px;
+  grid-gap: 40px clamp(90px, 9.7765vw, 140px);
+
+  @include tablet{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile{
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
 
 
   &__title {
@@ -13,6 +22,7 @@
 
   p {
     font-size: clamp(16px, 1.8156vw, 26px);
+    text-align: start;
   }
 
   &__item {
@@ -28,12 +38,22 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
+
+      @include mobile{
+        left: -15px;
+        top: 50%;
+        transform: translate(-100%, -50%);
+      }
     }
 
     &:first-child {
       &::before {
         width: clamp(25px, 2.933vw, 42px);
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='106' fill='none'%3E%3Cpath fill='%230A65FF' d='M22.6814 105.15V21.9L7.9729 30.75l-7.8045-15L27.184 0h13.9581v105.15H22.6814Z'/%3E%3C/svg%3E");
+      
+        @include mobile{
+          left: -30px;
+        }
       }
     }
 
@@ -41,12 +61,41 @@
       &::before {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='77' height='107' fill='none'%3E%3Cpath fill='%230A65FF' d='M.4265 106.5V91.05L19.9378 75c30.9179-25.8 35.5706-33 35.5706-43.2 0-8.85-6.1536-14.4-15.9092-14.4-12.3071 0-19.3612 7.2-20.1117 18.45l-18.0104-3C2.978 14.25 19.0373 0 39.5992 0c21.9127 0 35.4205 11.85 35.4205 30.45 0 16.2-8.1047 26.55-43.3751 55.8l-3.0018 2.55h47.8777v17.7H.4265Z'/%3E%3C/svg%3E");
       }
+
+      @include tablet{
+        max-width: 250px;
+        justify-self: end;
+      }
+
+      @include small-tablet{
+        max-width: 180px;
+      }
+
+      @include mobile{
+        justify-self: initial;
+      }
     }
 
     &:nth-child(3) {
       &::before {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='76' height='107' fill='none'%3E%3Cpath fill='%230A65FF' d='M15.5356 76.2c4.8028 9 12.6073 13.5 22.6631 13.5 11.5567 0 18.6108-6.15 18.6108-16.35 0-9.75-6.1536-15.9-16.8097-15.9-3.452 0-6.1536.45-8.4049 1.5L21.2389 48l29.1168-30.9H6.0801V0h68.2895v14.7l-27.766 28.8c18.3106 1.95 29.1168 13.05 29.1168 29.85 0 19.5-15.609 33.15-38.122 33.15-17.1099 0-30.3176-8.1-36.9214-21.45l14.8586-8.85Z'/%3E%3C/svg%3E");
       }
+
+      @include tablet{
+        grid-column: span 2;
+        justify-self: center;
+        max-width: 350px;
+      }
+
+      @include mobile{
+        grid-column: initial;
+        justify-self: initial;
+        max-width: 227px;
+      }
+    }
+
+    @include mobile{
+      max-width: 225px;
     }
   }
 }

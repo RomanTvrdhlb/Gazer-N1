@@ -64,10 +64,6 @@ body {
     b {
       font-weight: 700;
     }
-
-    @include small-tablet {
-      text-align: center;
-    }
   }
 
   img,

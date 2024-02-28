@@ -9,6 +9,8 @@
     <section class="first-section">
       <div class="first-section__bg">
         <picture>
+          <source type='image/webp' media='(max-width: 575px)' srcset='img/index/bg1mob.webp'>
+          <source media='(max-width: 575px)' srcset='img/index/bg1mob.png'>
           <source type='image/webp' srcset='img/index/bg1.webp'>
           <img width='1728' height='984' src='img/index/bg1.png' alt='image'>
         </picture>
@@ -78,6 +80,12 @@
       <div class="container">
         <div class="search-section__box">
           <h3 class="title">Как обычно происходит поиск?</h3>
+          <div class="search-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/index/bg2mob.webp'>
+              <img width='516' height='328' src='img/index/bg2mob.png' alt='image'>
+            </picture>
+          </div>
           <ul class="search-list">
             <li class="search-list__item">
               <span class="search-list__title">Ищем название фильма на смартфоне</span>
@@ -103,62 +111,62 @@
       <div class="container">
         <div class="info-section__box">
           <div class="info-section__inner">
-          <h4 class="title">Чем обычно заканчивается поиск?</h4>
+            <h4 class="title">Чем обычно заканчивается поиск?</h4>
 
-          <ul class="info-list">
-            <li class="info-list__item">
-              <div class="info-list__box">
-              <div class="info-list__top">
-                <span class="info-list__text">Фильм не найден</span>
-                <div class="info-list__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/index/img3.webp'>
-                    <img width='456' height='262' src='img/index/img3.png' alt='image'>
-                  </picture>
+            <ul class="info-list">
+              <li class="info-list__item">
+                <div class="info-list__box">
+                  <div class="info-list__top">
+                    <span class="info-list__text">Фильм не найден</span>
+                    <div class="info-list__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/img3.webp'>
+                        <img width='456' height='262' src='img/index/img3.png' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                  <span class="info-list__title">В установленных приложениях - нашего фильма нет</span>
+                  <p>Но ведь фильм существует -
+                    у кого же он есть?
+                  </p>
                 </div>
-              </div>
-              <span class="info-list__title">В установленных приложениях - нашего фильма нет</span>
-              <p>Но ведь фильм существует -
-                у кого же он есть?
-                </p>
-              </div>
-            </li>
-            <li class="info-list__item">
-              <div class="info-list__box">
-              <div class="info-list__top">
-                <span class="info-list__text">Английский язык</span>
-                <div class="info-list__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/index/img4.webp'>
-                    <img width='456' height='262' src='img/index/img4.png' alt='image'>
-                  </picture>
+              </li>
+              <li class="info-list__item">
+                <div class="info-list__box">
+                  <div class="info-list__top">
+                    <span class="info-list__text">Английский язык</span>
+                    <div class="info-list__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/img4.webp'>
+                        <img width='456' height='262' src='img/index/img4.png' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                  <span class="info-list__title">Фильм есть, но без перевода на нужный язык</span>
+                  <p>Даже если вы знаете разговорный, эмоции от просмотра будут совсем другие</p>
                 </div>
-              </div>
-              <span class="info-list__title">Фильм есть, но без перевода на нужный язык</span>
-              <p>Даже если вы знаете разговорный, эмоции от просмотра будут совсем другие</p>
-              </div>
-            </li>
-            <li class="info-list__item">
-              <div class="info-list__box">
-              <div class="info-list__top">
-                <span class="info-list__text">Фильм стоит $10</span>
-                <div class="info-list__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/index/img5.webp'>
-                    <img width='456' height='262' src='img/index/img5.png' alt='image'>
-                  </picture>
+              </li>
+              <li class="info-list__item">
+                <div class="info-list__box">
+                  <div class="info-list__top">
+                    <span class="info-list__text">Фильм стоит $10</span>
+                    <div class="info-list__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/img5.webp'>
+                        <img width='456' height='262' src='img/index/img5.png' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                  <span class="info-list__title">Фильм есть на нужном языке, но он не входит
+                    в подписку</span>
+                  <p>Так а может в другом приложении входит? Не покупать же теперь каждый фильм</p>
                 </div>
-              </div>
-              <span class="info-list__title">Фильм есть на нужном языке, но он не входит
-                в подписку</span>
-              <p>Так а может в другом приложении входит? Не покупать же теперь каждый фильм</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="info-section__wrapp">
-          <span class="title">Как бы вы хотели,<br>
-            чтобы работал телевизор?</span>
+              </li>
+            </ul>
+          </div>
+          <div class="info-section__wrapp">
+            <span class="title">Как бы вы хотели,<br>
+              чтобы работал телевизор?</span>
             <div class="info-section__content">
               <ul class="how-list">
                 <li class="how-list__item">
@@ -181,7 +189,7 @@
                 </picture>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>
@@ -191,15 +199,130 @@
         <div class="choice-section__box">
           <h5 class="title title--black">Gazer для поиска фильмов</h5>
           <div class="choice-section__inner">
-          <div class="choice-section__image">
-            <picture>
-              <source type='image/webp' srcset='img/index/img7.webp'>
-              <img width='1119' height='755' src='img/index/img7.png' alt='image'>
-            </picture>
+            <div class="choice-section__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img7.webp'>
+                <img width='1119' height='755' src='img/index/img7.png' alt='image'>
+              </picture>
+            </div>
+            <button class="main-button">Выбрать модель</button>
           </div>
-          <button class="main-button">Выбрать модель</button>
         </div>
-        </div>
+      </div>
+    </section>
+
+    
+    <section class="about-section about-section--mode">
+      <div class="container">
+       <ul class="about-list about-list--mode">
+        <li class="about-list__item">
+          <span class="subtitle">Легко и быстро выбирать среди всего<br> существующего в мире контента </span>
+          <div class="about-box">
+            <div class="about-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img11.webp'>
+                <img width='860' height='504' src='img/index/img11.png' alt='image'>
+              </picture>
+            </div>
+
+            <div class="about-box__inner">
+              <p>Это настоящий маркетплейс на телевизоре. Не только приложения, но и телеканалы, фильмы и сериалы - собраны в единый мультикаталог на главном экране</p>
+              <span class="subtitle subtitle--mode">Если фильм существует –<br>
+                вы его найдете</span>
+            </div>
+          </div>
+        </li>
+        <li class="about-list__item">
+          <span class="subtitle">Поиск через Chat GPTН -найдет то что вы хотели,<br> даже если вы не точно знаете что хотели </span>
+          <div class="about-box about-box--second">
+            <div class="about-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img12.webp'>
+                <img width='860' height='504' src='img/index/img12.png' alt='image'>
+              </picture>
+            </div>
+
+            <div class="about-box__inner">
+              <p>Искусственный интеллект найдет для вас фильм, похожий на тот, что вы указали. Или предложит фильмы под ваше настроение, на любую тему, по сюжету, с нужными актерами и под любой другой запрос</p>
+              <span class="subtitle subtitle--mode">Формируйте подборки<br> до бесконечности</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="about-list__item">
+          <span class="subtitle">Где можно посмотреть найденный фильм? </span>
+          <div class="about-box">
+            <div class="about-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img13.webp'>
+                <img width='860' height='504' src='img/index/img13.png' alt='image'>
+              </picture>
+            </div>
+
+            <div class="about-box__inner">
+              <p>Где фильм транслируется в эфире бесплатно, где он включен в подписку, где и по какой цене доступен в аренду или для покупки</p>
+              <span class="subtitle subtitle--mode">Сразу переходите<br> 
+                к просмотру
+                </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="about-list__item">
+          <span class="subtitle">Уникальный фильтр<br>
+            для поиска фильмов и сериалов</span>
+          <div class="about-box about-box--mode">
+            <div class="about-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img14.webp'>
+                <img width='1008' height='504' src='img/index/img14.png' alt='image'>
+              </picture>
+            </div>
+
+            <div class="about-box__inner">
+              <p>По всем возможным параметрам и их комбинациям. По ключевым словам, жанру, годам выпуска, рейтингам, актерам, режиссерам, студиям и кинопремиям</p>
+              <span class="subtitle subtitle--mode">Находите именно то,<br> что хотели</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="about-list__item">
+          <span class="subtitle">Все популярные подборки фильмов</span>
+          <div class="about-box about-box--fifth">
+            <div class="about-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img15.webp'>
+                <img width='860' height='504' src='img/index/img15.png' alt='image'>
+              </picture>
+            </div>
+
+            <div class="about-box__inner">
+              <p>От студий, онлайн-кинотеатров, киносайтов, критиков, лидеров мнений кино, от известных личностей и даже локальных блогеров</p>
+              <span class="subtitle subtitle--mode">Переключайтесь между<br> подборками в один клик</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="about-list__item">
+          <span class="subtitle">Все доступные в вашей стране телеканалы</span>
+          <div class="about-box about-box--last">
+            <div class="about-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/img16.webp'>
+                <img width='860' height='504' src='img/index/img16.png' alt='image'>
+              </picture>
+            </div>
+
+            <div class="about-box__inner">
+              <p>От всех онлайн кинотеатров, по всем жанрам, из всех подписок - собраны на экране. Выбирайте интересные для вас каналы и лучшие условия их просмотра</p>
+              <span class="subtitle subtitle--mode">Листайте каналы<br>
+                в удовольствие
+                </span>
+            </div>
+          </div>
+        </li>
+
+       </ul>
       </div>
     </section>
 
@@ -219,14 +342,17 @@
               <span class="subtitle subtitle--mode">Cоздан на базе IPS панели класса А+</span>
               <ul class="specs-list">
                 <li class="specs-list__item">
+                  <div class="specs-list__box">
                   <span class="specs-list__icon">
                     <svg width='77' height='77'>
                       <use href='img/sprite/sprite.svg#icon1'></use>
                     </svg>
                   </span>
                   <p>Более высокая яркость и контрастность по сравнению с обычными ТВ панелями</p>
+                </div>
                 </li>
                 <li class="specs-list__item">
+                  <div class="specs-list__box">
                   <span class="specs-list__icon">
                     <svg width='77' height='77'>
                       <use href='img/sprite/sprite.svg#icon2'></use>
@@ -234,71 +360,261 @@
                   </span>
                   <p>Не меняется при<br> просмотре с любого угла
                   </p>
+                  </div>
                 </li>
                 <li class="specs-list__item">
+                  <div class="specs-list__box">
                   <span class="specs-list__icon">
                     <svg width='77' height='77'>
                       <use href='img/sprite/sprite.svg#icon3'></use>
                     </svg>
                   </span>
-                  <p>Сохраняются в течение минимум 10 лет</p>
+                  <p>Сохраняются в течение<br> минимум 10 лет</p>
+                  </div>
                 </li>
               </ul>
             </div>
 
             <div class="specs-section__content">
-            <div class="specs-section__wrapp">
-              <span class="subtitle subtitle--mode">TrueRGB компоновка субпикселей</span>
-              <ul class="specs-list">
-                <li class="specs-list__item">
-                  <span class="specs-list__icon">
-                    <svg width='77' height='77'>
-                      <use href='img/sprite/sprite.svg#icon4'></use>
-                    </svg>
-                  </span>
-                  <p>Без использования<br> белого субпикселя</p>
-                </li>
-                <li class="specs-list__item">
-                  <span class="specs-list__icon">
-                    <svg width='77' height='77'>
-                      <use href='img/sprite/sprite.svg#icon5'></use>
-                    </svg>
-                  </span>
-                  <p>Гарантирует полное разрешение</p>
-                </li>
-              </ul>
-            </div>
+              <div class="specs-section__wrapp">
+                <span class="subtitle subtitle--mode">TrueRGB компоновка субпикселей</span>
+                <ul class="specs-list">
+                  <li class="specs-list__item">
+                    <div class="specs-list__box">
+                    <span class="specs-list__icon">
+                      <svg width='77' height='77'>
+                        <use href='img/sprite/sprite.svg#icon4'></use>
+                      </svg>
+                    </span>
+                    <p>Без использования<br> белого субпикселя</p>
+                    </div>
+                  </li>
+                  <li class="specs-list__item">
+                    <div class="specs-list__box">
+                    <span class="specs-list__icon">
+                      <svg width='77' height='77'>
+                        <use href='img/sprite/sprite.svg#icon5'></use>
+                      </svg>
+                    </span>
+                    <p>Гарантирует полное<br> разрешение</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-            <div class="specs-section__wrapp">
-              <span class="subtitle subtitle--mode">Уникальная калибровка цветопередачи</span>
-              <ul class="specs-list">
-                <li class="specs-list__item">
-                  <span class="specs-list__icon">
-                    <svg width='77' height='77'>
-                      <use href='img/sprite/sprite.svg#icon6'></use>
-                    </svg>
-                  </span>
-                  <p>Как в лучших в мире ноутбуках</p>
-                </li>
-                <li class="specs-list__item">
-                  <span class="specs-list__icon">
-                    <svg width='77' height='77'>
-                      <use href='img/sprite/sprite.svg#icon7'></use>
-                    </svg>
-                  </span>
-                  <p>Точно и натурально передает все цвета</p>
-                </li>
-              </ul>
+              <div class="specs-section__wrapp">
+                <span class="subtitle subtitle--mode">Уникальная калибровка цветопередачи</span>
+                <ul class="specs-list">
+                  <li class="specs-list__item">
+                    <div class="specs-list__box">
+                    <span class="specs-list__icon">
+                      <svg width='77' height='77'>
+                        <use href='img/sprite/sprite.svg#icon6'></use>
+                      </svg>
+                    </span>
+                    <p>Как в лучших в мире<br> ноутбуках</p>
+                    </div>
+                  </li>
+                  <li class="specs-list__item">
+                    <div class="specs-list__box">
+                    <span class="specs-list__icon">
+                      <svg width='77' height='77'>
+                        <use href='img/sprite/sprite.svg#icon7'></use>
+                      </svg>
+                    </span>
+                    <p>Точно и натурально<br> передает все цвета</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="specs-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/index/img8.webp'>
+                  <img width='937' height='685' src='img/index/img8.png' alt='image'>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs-section specs-section--mode">
+      <div class="container">
+        <div class="specs-section__box">
+          <h6 class="title">Пульт multicontrol remote</h6>
+
+          <div class="specs-section__inner">
+            <span class="subtitle subtitle--mode">Красивый и современный</span>
+            <ul class="specs-list specs-list--remote">
+              <li class="specs-list__item">
+                <p>с голосовым поиском и вводом текста</p>
+              </li>
+              <li class="specs-list__item">
+                <p>не нужны батарейки - заряжается от Type-C
+                </p>
+              </li>
+              <li class="specs-list__item">
+                <p>можно играть в игры 
+                  как на геймпаде
+                  </p>
+              </li>
+              <li class="specs-list__item">
+                <p>и управлять как гиромышкой</p>
+              </li>
+            </ul>
+
+            <div class="specs-section__image specs-section__image--mode">
+              <picture>
+                <source type='image/webp' srcset='img/index/remote3.webp'>
+                <img width='565' height='161' src='img/index/remote3.png' alt='image'>
+              </picture>
             </div>
 
             <div class="specs-section__image">
               <picture>
-                <source type='image/webp' srcset='img/index/img8.webp'>
-                <img width='937' height='685' src='img/index/img8.png' alt='image'>
+                <source type='image/webp' media='(max-width: 575px)' srcset='img/index/remote2mob.webp'>
+                <source media='(max-width: 575px)' srcset='img/index/remote2mob.png'>
+                <source type='image/webp' srcset='img/index/remote2.webp'>
+                <img width='266' height='594' src='img/index/remote2.png' alt='image'>
+              </picture>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choice-section choice-section--mode">
+      <div class="container">
+        <div class="choice-section__box">
+          <h6 class="title title--mode">Последнее, но не по значению</h6>
+          <div class="choice-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/index/img9.webp'>
+              <img width='785' height='818' src='img/index/img9.png' alt='image'>
+            </picture>
+          </div>
+          <p>
+            <b>Безрамочный экран.</b> Теперь ничто не мешает вам полностью погрузиться в виртуальные миры и насладиться
+            цифровым артом.
+            <br><br>
+            <b>Мощный звук и поддержка популярных форматов.</b> Достаточно лишь сделать громче — и вы на концерте любимой
+            группы или в кинотеатре на премьере фильма.
+            <br><br>
+            <b>Операционная система Android TV.</b> Стабильность, доступ к огромному количеству приложений и регулярные
+            обновления.
+            <br><br>
+            <b>Самые популярные приложения.</b> Netflix, YouTube, Amazon, а также собственные приложения Gazer multimovie,
+            multiart, multiverse уже установлены
+            на вашем телевизоре.
+
+          </p>         
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section info-section--mode">
+      <div class="container">
+        <div class="info-section__box">
+          <div class="info-section__inner">
+            <h6 class="title">Gazer N1 live edition</h6>
+
+            <ul class="model-list">
+              <li class="model-list__item">
+                <span class="model-list__title"><b>65” UHD</b><br>
+                  multiverse screen</span>
+                <div class="model-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/tv1.webp'>
+                    <img width='494' height='307' src='img/index/tv1.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+              <li class="model-list__item">
+                <span class="model-list__title"><b>55” UHD</b><br>
+                  multiverse screen</span>
+                <div class="model-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/tv2.webp'>
+                    <img width='442' height='279' src='img/index/tv2.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+              <li class="model-list__item">
+                <span class="model-list__title"><b>50” UHD</b><br>
+                  multiverse screen</span>
+                <div class="model-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/tv3.webp'>
+                    <img width='414' height='264' src='img/index/tv3.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+              <li class="model-list__item">
+                <span class="model-list__title"><b>43” UHD</b><br>
+                  multiverse screen</span>
+                <div class="model-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/tv4.webp'>
+                    <img width='377' height='244' src='img/index/tv4.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+              <li class="model-list__item">
+                <span class="model-list__title"><b>43” UHD</b><br>
+                  multiverse screen</span>
+                <div class="model-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/tv5.webp'>
+                    <img width='377' height='244' src='img/index/tv5.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+              <li class="model-list__item">
+                <span class="model-list__title"><b>40” UHD</b><br>
+                  multiverse screen</span>
+                <div class="model-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/tv6.webp'>
+                    <img width='342' height='223' src='img/index/tv6.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+              <li class="model-list__item">
+                <span class="model-list__title"><b>32” UHD</b><br>
+                  multiverse screen</span>
+                <div class="model-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index/tv7.webp'>
+                    <img width='308' height='207' src='img/index/tv7.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-section__wrapp">
+            <span class="title">Всегда будет что посмотреть</span>
+            <div class="info-section__image">
+              <picture>
+                <source type='image/webp' media='(max-width: 575px)' srcset='img/index/img10mob.webp'>
+                <source media='(max-width: 575px)' srcset='img/index/img10mob.png'>
+                <source type='image/webp' srcset='img/index/img10.webp'>
+                <img width='1478' height='794' src='img/index/img10.png' alt='image'>
+              </picture>
+            </div>
+            <div class="info-section__bg">
+              <picture>
+                <source type='image/webp' srcset='img/index/bg4.webp'>
+                <img width='1478' height='794' src='img/index/bg4.png' alt='image'>
               </picture>
             </div>
           </div>
-          </div>
+
+
         </div>
       </div>
     </section>

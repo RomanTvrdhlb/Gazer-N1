@@ -23,4 +23,84 @@
         align-items: center;
         grid-gap: clamp(8px, 2.2346vw, 32px);
     }
+
+ 
+    &--mode{
+        padding: clamp(20px, 9.2179vw, 132px) 0;
+
+
+        .choice-section{
+        &__box{
+            padding-left: clamp(0px, 2.514vw, 36px);
+            position: relative;
+            align-items: flex-start;
+            grid-gap: clamp(18px, 3.4916vw, 50px);
+
+            p{
+                color: rgba(var(--cl-b), 1);
+                max-width: Min(52.095vw, 746px);
+                font-size: clamp(18px, 1.8156vw, 26px);
+
+                @include tablet{
+                    max-width: 100%;
+                }
+            }
+
+            @include desktop{
+                padding-left: 0;
+            }
+        }
+
+        &__image{
+            position: absolute;
+            transform: translateX(10px);
+            right: calc((((100vw - var(--container-width)) / 2) + 10px) * -1);
+            top: -24%;
+            width: clamp(444px, 46.176vw, 785px);
+            height: clamp(349px, 48.118vw, 818px);
+
+            @media (max-width: (1600px)) {
+                top: -8%;
+                right: -65px;
+                width: clamp(444px, 43.871vw, 680px);
+                height: clamp(349px, 46.645vw, 723px);
+              }
+
+              @include desktop{
+                right: -28px;
+              }
+
+              @include tablet{
+                display: flex;
+                position: relative;
+                position: static;
+                align-self: flex-end;
+                margin-right: -28px;
+                margin-top: -40px;
+                width: clamp(444px, 46.176vw, 785px);
+                height: clamp(398px, 48.118vw, 818px);
+
+                img,picture{
+                    width: 100%;
+                    height: 100%;
+                }
+              }
+
+              @include small-tablet{
+                display: flex;
+                position: relative;
+                position: static;
+                align-self: flex-end;
+                margin-right: -28px;
+                margin-top: -25px;
+                width: 420px;
+                height: 375px;
+                img,picture{
+                    width: 100%;
+                    height: 100%;
+                }
+              }
+        }
+    }
+    }
 }
